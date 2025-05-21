@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Container from './ui/Container';
 import Button from './ui/Button';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 
 interface FormState {
   name: string;
@@ -124,18 +124,6 @@ const Contact: React.FC = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-white">Call Us</h3>
                   <p className="mt-1 text-dark-300">+1 (555) 123-4567</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-500/20 text-primary-400">
-                    <MapPin size={20} />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-white">Visit Us</h3>
-                  <p className="mt-1 text-dark-300">123 Innovation Drive, Tech City, CA 90210</p>
                 </div>
               </div>
             </div>
