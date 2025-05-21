@@ -82,7 +82,6 @@ const Header: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <Button>Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -137,9 +136,6 @@ const Header: React.FC = () => {
                 )}
               </div>
             ))}
-            <div className="pt-2">
-              <Button fullWidth>Get Started</Button>
-            </div>
           </div>
         </div>
       )}
