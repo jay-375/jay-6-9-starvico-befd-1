@@ -106,24 +106,24 @@ const Contact: React.FC = () => {
               <div className="flex items-start">
                 <div className="flex-shrink-0 mt-1">
                   <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-500/20 text-primary-400">
-                    <Mail size={20} />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-medium text-white">Email Us</h3>
-                  <p className="mt-1 text-dark-300">info@starvico.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-500/20 text-primary-400">
                     <Phone size={20} />
                   </div>
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-white">Call Us</h3>
                   <p className="mt-1 text-dark-300">+1 (555) 123-4567</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-500/20 text-primary-400">
+                    <Mail size={20} />
+                  </div>
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-medium text-white">Email</h3>
+                  <p className="mt-1 text-dark-300">info@starvico.com</p>
                 </div>
               </div>
             </div>
