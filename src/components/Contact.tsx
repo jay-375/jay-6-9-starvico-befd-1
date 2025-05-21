@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
               Ready to Transform Your Business?
             </h2>
             <p className="text-dark-300 text-lg mb-8">
-              Reach out to our team to learn how our automation solutions can help drive growth and reduce costs for your business.
+              Reach out to me to learn how my automation solutions can help drive growth and reduce costs for your business.
             </p>
             
             <div className="space-y-6">
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Message Sent!</h3>
                 <p className="text-dark-300">
-                  Thank you for reaching out. We'll get back to you shortly.
+                  Thank you for reaching out. I'll get back to you shortly.
                 </p>
               </div>
             ) : (
