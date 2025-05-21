@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import LiveChat from './components/LiveChat';
 
 function App() {
   useEffect(() => {
@@ -45,7 +44,6 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <LiveChat />
     </div>
   );
 }
