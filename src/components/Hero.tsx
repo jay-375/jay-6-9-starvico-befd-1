@@ -54,24 +54,6 @@ const Hero: React.FC = () => {
             </Button>
           </div>
         </div>
-
-        <div 
-          className={`mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 transition-all duration-700 delay-300 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          {[
-            { number: '90%', text: 'Cost Reduction' },
-            { number: '24/7', text: 'Customer Support' },
-            { number: '3x', text: 'Lead Generation' },
-            { number: '99.9%', text: 'Satisfaction Rate' }
-          ].map((stat, index) => (
-            <div key={index} className="bg-dark-800/50 backdrop-blur-sm rounded-lg p-6 text-center border border-dark-700 hover:border-primary-600/50 transition-all hover:transform hover:scale-105">
-              <div className="text-2xl md:text-3xl font-bold text-primary-400 mb-2">{stat.number}</div>
-              <div className="text-dark-300 text-sm md:text-base">{stat.text}</div>
-            </div>
-          ))}
-        </div>
       </Container>
     </section>
   );
