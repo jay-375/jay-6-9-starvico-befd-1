@@ -9,7 +9,7 @@ const Services: React.FC = () => {
       <Container>
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block px-3 py-1 rounded-full bg-primary-500/10 text-primary-400 text-sm font-medium mb-4">
-            Our Services
+            Services
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Comprehensive Automation Solutions for Your Business
