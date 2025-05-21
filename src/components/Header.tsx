@@ -18,6 +18,30 @@ const Header: React.FC = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      const headerOffset = 100; // Adjust this value to control the scroll offset
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+
+    // Close mobile menu if open
+    if (isOpen) {
+      setIsOpen(false);
+    }
+    // Close submenu
+    setOpenSubmenu(null);
+  };
+
   const navLinks = [
     { name: 'Home', href: '#home' },
     { 
@@ -64,6 +88,7 @@ const Header: React.FC = () => {
                               key={idx} 
                               href={subItem.href}
                               className="block px-4 py-2 text-dark-200 hover:bg-dark-700 hover:text-primary-400 transition-colors"
+                              onClick={(e) => handleNavClick(e, subItem.href)}
                             >
                               {subItem.name}
                             </a>
@@ -75,6 +100,7 @@ const Header: React.FC = () => {
                     <a 
                       href={link.href}
                       className="text-dark-100 hover:text-primary-400 font-medium transition-colors"
+                      onClick={(e) => handleNavClick(e, link.href)}
                     >
                       {link.name}
                     </a>
@@ -118,6 +144,7 @@ const Header: React.FC = () => {
                             key={idx} 
                             href={subItem.href}
                             className="block py-2 text-dark-300 hover:text-primary-400 transition-colors"
+                            onClick={(e) => handleNavClick(e, subItem.href)}
                           >
                             {subItem.name}
                           </a>
@@ -129,7 +156,7 @@ const Header: React.FC = () => {
                   <a 
                     href={link.href}
                     className="block py-2 text-dark-100 hover:text-primary-400 font-medium transition-colors"
-                    onClick={toggleMenu}
+                    onClick={(e) => handleNavClick(e, link.href)}
                   >
                     {link.name}
                   </a>
